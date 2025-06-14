@@ -44,9 +44,7 @@ webpage-to-svg-extension/
 ├── popup.html
 ├── popup.js
 ├── content.js
-├── html-to-image.min.js
-└── icons/
-    └── icon128.png
+└── html-to-image.min.js
 ```
 
 ---
@@ -77,7 +75,7 @@ The extension uses minimal permissions:
 
 ## 🧑‍💻 Author
 
-Built by [Your Name] – feel free to fork and customize.
+Built by Gokul – feel free to fork and customize.
 
 ---
 
