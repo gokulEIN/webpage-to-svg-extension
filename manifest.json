@@ -1,21 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "SVG Exporter",
+  "name": "Webpage to SVG",
   "version": "1.0",
-  "description": "Export part of a webpage as SVG",
+  "description": "Capture entire web pages and download as SVG.",
   "permissions": ["scripting", "activeTab"],
   "action": {
-    "default_title": "Export to SVG"
+    "default_popup": "popup.html"
   },
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["html-to-image.min.js", "content.js"],
-      "run_at": "document_idle"
-    }
-  ],
-  "host_permissions": ["<all_urls>"]
+  }
 }
